@@ -161,3 +161,18 @@ section[id]{scroll-margin-top:110px}
  .sketch-services .section-intro h2,
  .sketch-services #contact h2 {font-size:clamp(27px,5vw,34px);line-height:1.12;max-width:none}
 }
+
+/* Allow display headlines their full available measure; avoid isolated last words. */
+.sketch-services .intro h2,
+.sketch-services .about-services h2,
+.sketch-services .section-intro h2,
+.sketch-services #contact h2 {
+ max-width:none;
+ width:100%;
+ text-wrap:balance;
+}
+.sketch-services .heading-preview {
+ display:block;
+ max-width:100%;
+ text-wrap:balance;
+}
