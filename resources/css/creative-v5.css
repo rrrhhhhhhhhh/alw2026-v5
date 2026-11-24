@@ -125,3 +125,39 @@ section[id]{scroll-margin-top:110px}
 }
 @media(max-width:360px){.opening-page .opening-nav{font-size:35px}.services-page .section-nav{font-size:20px;gap:8px}}
 @media(prefers-reduced-motion:reduce){.title-overlay,.sketch-services .offer-grid article{transition:none}}
+
+/* Shared editorial reading measure, independent of the wider information grids. */
+.sketch-services { --reading-measure: 76ch; }
+.sketch-services .intro > div,
+.sketch-services .about-services,
+.sketch-services .section-intro,
+.sketch-services #contact { min-width:0; }
+.sketch-services .intro p,
+.sketch-services .about-services p,
+.sketch-services .section-intro .section-lead,
+.sketch-services #contact .section-lead {
+ width:100%;
+ max-width:var(--reading-measure);
+ font-size:clamp(19px,2.05vw,29.5px);
+ line-height:1.28;
+}
+.sketch-services .about-services > div {max-width:none}
+.sketch-services .intro h2,
+.sketch-services .about-services h2,
+.sketch-services .section-intro h2,
+.sketch-services #contact h2 {
+ font-size:clamp(28px,3.55vw,51px);
+ line-height:1.1;
+ max-width:30ch;
+ margin:0 0 clamp(16px,1.8vw,26px);
+}
+@media(max-width:810px){
+ .sketch-services .intro p,
+ .sketch-services .about-services p,
+ .sketch-services .section-intro .section-lead,
+ .sketch-services #contact .section-lead {font-size:21px;line-height:1.38;max-width:none}
+ .sketch-services .intro h2,
+ .sketch-services .about-services h2,
+ .sketch-services .section-intro h2,
+ .sketch-services #contact h2 {font-size:clamp(27px,5vw,34px);line-height:1.12;max-width:none}
+}
