@@ -6,6 +6,7 @@
  const show = button => {
   if (reduced.matches || overlay.classList.contains('is-visible')) return;
   overlay.textContent = button.textContent;
+  overlay.classList.toggle('is-italic', button.closest('.about-services, #teams') !== null);
   overlay.classList.add('is-visible');
   timer = setTimeout(hide, 2000);
  };
