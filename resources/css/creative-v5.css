@@ -55,3 +55,28 @@ section[id]{scroll-margin-top:110px}
 @media(min-width:600px) and (max-width:800px){.offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.principles{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:810px){.opening-page header{position:fixed;top:0;left:0;width:100%;padding:12px 20px}.opening-page nav{position:fixed;inset:105px 20px auto;justify-content:flex-start;gap:28px;font-size:40px;line-height:1.1}.opening-page nav a{min-height:44px}.services-page header{padding:12px 20px}.services-page .section-nav{font-size:20px;gap:4px 24px}.opening-copy,.ruled-section{padding:32px 20px}main.sketch-services{padding-top:0}p{font-size:21px}.columns p,.columns h3,.principles p,.offer-grid p{font-size:15px}.columns .eyebrow,.principles h3,.offer-grid h3{font-size:12px}.offer-grid article{min-height:0;padding:18px}.offer-grid .price{padding-top:24px}.section-label{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.title-overlay{transition:none}}
+
+/* Review 24 Nov: quieter card proportions, inset rules and consistent contact scale. */
+.opening-page .opening-nav { column-gap: clamp(42px,4.2vw,64px); }
+.sketch-services .ruled-section { position:relative; border-top:0; }
+.sketch-services .ruled-section::before { content:""; position:absolute; top:0; left:var(--gutter); right:var(--gutter); border-top:1px dotted #666; pointer-events:none; }
+.sketch-services > footer { margin-inline:var(--gutter); padding-inline:0; }
+.sketch-services #contact .contact-email { display:inline-block; font-size:clamp(16px,1.25vw,18px); line-height:1.5; }
+.sketch-services #contact .contact-instagram { font-size:clamp(15px,1.15vw,17px); line-height:1.5; }
+.sketch-services #contact > p:last-child { margin:8px 0 0; font-size:inherit; }
+@media(min-width:811px) {
+ .sketch-services .offer-grid article { min-height:clamp(190px,17.8vw,256px); }
+ .sketch-services .process-grid article { min-height:clamp(150px,14vw,202px); }
+}
+@media(max-width:810px) {
+ .opening-page header { padding:12px 20px; }
+ .opening-page .opening-nav { position:fixed; inset:105px 20px auto; justify-content:flex-start; column-gap:28px; row-gap:8px; font-size:40px; line-height:1.1; }
+ .opening-page .opening-nav > a { min-height:44px; }
+ .sketch-services #credits .columns { grid-template-columns:1fr; gap:38px; }
+ .sketch-services #credits .eyebrow { margin-bottom:9px; }
+ .sketch-services #credits h3 { margin:0 0 4px; }
+ .sketch-services #credits article { line-height:1.65; }
+ .sketch-services #contact .contact-email { font-size:21px; line-height:1.4; }
+ .sketch-services #contact .contact-instagram { font-size:16px; }
+ .sketch-services > footer { margin-inline:20px; }
+}
