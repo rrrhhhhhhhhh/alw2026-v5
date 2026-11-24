@@ -1,0 +1,273 @@
+/* Layout from alw-web-sketch.pdf. The original header is retained. */
+.sketch-services { display:block; width:auto; height:auto; margin:0 12px; padding-top:100px; font-family:"adobe-caslon-pro",serif; color:#000; }
+.sketch-services p, .sketch-services h2, .sketch-services h3, .sketch-services a { font-size:17px; line-height:1.2; font-weight:400; color:#000; text-align:left; }
+.sketch-services h2, .sketch-services h3 { margin:0 0 18px; }
+.sketch-services p { margin:0 0 18px; }
+.sketch-services .narrow, .sketch-services .section-intro { width:46%; margin-left:calc(35.5vw - 12px); max-width:610px; }
+.sketch-services .intro, .sketch-services .about-services { display:block; padding:0; border:0; margin:0; }
+.sketch-services .intro > div:first-child { max-width:none; }
+.sketch-services .intro h2 { max-width:none; }
+.sketch-services .opening-copy { padding-bottom:52px; }
+.sketch-services #credits { border:0; padding:0; margin:32px 0 0; background:none; }
+.sketch-services #credits .columns { display:block; }
+.sketch-services #credits article { display:block; margin-bottom:32px; }
+.sketch-services #credits article:last-child { margin-bottom:0; }
+.sketch-services #credits h3 { font-size:17px; margin:0 0 3px; }
+.sketch-services #credits p { color:#000; margin:0; }
+.sketch-services #credits .eyebrow { font-family:"Messina Sans",sans-serif; font-size:10px; margin:0 0 12px; text-transform:uppercase; }
+.sketch-services .ruled-section { border-top:1px solid #000; padding-top:44px; margin:0; scroll-margin-top:100px; }
+.sketch-services .about-services p + p { margin-top:0; }
+.sketch-services .principles { padding:26px 0 42px; }
+.sketch-services .principles article { margin-bottom:20px; }
+.sketch-services .principles h3 { margin:0 0 3px; }
+.sketch-services .principles p { margin:0; }
+.sketch-services .section-intro { padding-bottom:34px; }
+.sketch-services .section-label { margin-bottom:24px; }
+.sketch-services .section-lead { max-width:none; margin-bottom:0; }
+.sketch-services .offer-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1fr; }
+.sketch-services .offer-grid article { display:flex; flex-direction:column; padding:20px 24px; border-right:1px solid #000; min-width:0; }
+.sketch-services .offer-grid article:nth-child(3n) { border-right:0; }
+.sketch-services .offer-grid article:nth-child(n+4) { border-top:1px solid #000; }
+.sketch-services .offer-grid:has(article:nth-child(4)) { background:linear-gradient(#000,#000) left 50%/100% 1px no-repeat; }
+.sketch-services .offer-grid h3 { margin-bottom:20px; }
+.sketch-services .offer-grid p { margin:0 0 20px; }
+.sketch-services .offer-grid .price { margin: auto 0 0; padding-top:10px; }
+.sketch-services .process-title { margin:60px 0 40px calc(35.5vw - 12px); }
+.sketch-services .process-grid article { min-height:200px; }
+.sketch-services .process-grid h3 { margin-bottom:50px; }
+.sketch-services .process-grid p { margin-top:auto; margin-bottom:0; }
+.sketch-services .step-number { display:inline; margin-right:8px; }
+.sketch-services .billing-note { grid-column:3; grid-row:2; align-self:end; font-size:12px; padding:20px 24px; margin:0; }
+.sketch-services #styling { padding-bottom:44px; }
+.sketch-services #contact { border:0; padding:0; margin-bottom:110px; scroll-margin-top:100px; }
+.sketch-services .contact-email { display:inline-block; font-size:17px; margin-top:20px; }
+.sketch-services > footer { display:flex; justify-content:space-between; gap:24px; font-size:12px; padding:0 0 30px; }
+@media(max-width:1100px) { .sketch-services { padding-top:150px; } }
+@media(max-width:810px) {
+ .sketch-services { margin:0 20px; padding-top:145px; }
+ .sketch-services .narrow, .sketch-services .section-intro { width:100%; max-width:none; margin-left:0; }
+ .sketch-services .offer-grid { grid-template-columns:1fr; grid-auto-rows:auto; background:none!important; }
+ .sketch-services .offer-grid article { border-right:0; border-top:1px solid #000; padding:24px 0; }
+ .sketch-services .process-title { margin:40px 0 24px; }
+ .sketch-services .process-grid article { min-height:0; }
+ .sketch-services .process-grid h3 { margin-bottom:20px; }
+ .sketch-services .billing-note { grid-column:1; grid-row:auto; padding:20px 0; }
+ .sketch-services > footer { flex-direction:column; gap:6px; }
+}
+@media(max-width:810px) {
+ .opening-page .opening-nav { position:fixed; inset:105px 20px auto; justify-content:flex-start; gap:28px; font-size:40px; line-height:1.1; }
+ .opening-page .opening-nav > a { min-height:44px; }
+}
+/* Measured from the sketch: 12pt copy on a 14.4pt baseline.
+   Use the art-site 17px scale with proportional text measures. */
+.sketch-services { --copy-size:17px; --copy-leading:20.4px; }
+.sketch-services p, .sketch-services h2, .sketch-services h3, .sketch-services a { font-size:var(--copy-size); line-height:var(--copy-leading); }
+.sketch-services .narrow, .sketch-services .section-intro { width:380px; max-width:calc(64.5vw - 36px); }
+.sketch-services .intro h2, .sketch-services .section-intro h2, .sketch-services #contact h2 { white-space:normal; }
+.sketch-services .principles { width:430px; max-width:100%; padding-top:24px; }
+.sketch-services .principles h3 { font-weight:600; }
+.sketch-services #credits h3, .sketch-services #credits p { font-size:17px; line-height:20.4px; }
+.sketch-services #credits .eyebrow { font-size:9px; line-height:12px; color:#000; margin-bottom:10px; }
+.sketch-services #credits article { margin-bottom:28px; }
+.sketch-services .opening-copy { padding-bottom:56px; }
+.sketch-services .offer-grid article { padding:14px 24px; }
+.sketch-services .offer-grid article > h3, .sketch-services .offer-grid article > p { width:240px; max-width:100%; }
+.sketch-services .offer-grid article > h3 { min-height:20.4px; margin-bottom:20.4px; }
+.sketch-services .offer-grid article > p:not(.price) { margin-bottom:20.4px; }
+.sketch-services .offer-grid .price { padding-top:0; }
+.sketch-services .offer-grid:not(.process-grid) { grid-auto-rows:minmax(222px,1fr); }
+.sketch-services .process-grid article { min-height:200px; }
+.sketch-services .process-grid h3 { font-size:17px; margin-bottom:70px; }
+.sketch-services .process-grid p { margin-bottom:0!important; }
+.sketch-services #consulting.ruled-section, .sketch-services #teams.ruled-section, .sketch-services #styling.ruled-section { border-top:1px solid #000; padding-top:44px; }
+.sketch-services .billing-note { font-size:12px; line-height:16px; }
+.sketch-services .contact-email { font-size:17px; }
+@media(max-width:810px) {
+ .sketch-services .narrow, .sketch-services .section-intro { width:100%; max-width:none; }
+ .sketch-services .offer-grid:not(.process-grid) { grid-auto-rows:auto; }
+ .sketch-services .offer-grid article { padding:24px 0; }
+ .sketch-services .offer-grid article > h3, .sketch-services .offer-grid article > p { width:100%; }
+ .sketch-services .process-grid article { min-height:0; }
+ .sketch-services .process-grid h3 { margin-bottom:20px; }
+}
+/* Keep the sketch's column-to-type proportions on wide screens. */
+.sketch-services { width:calc(100% - 24px); max-width:840px; margin-left:auto; margin-right:auto; }
+.sketch-services .narrow, .sketch-services .section-intro { margin-left:35.8%; max-width:64.2%; }
+.sketch-services .offer-grid article { padding-left:14px; padding-right:14px; }
+.sketch-services .process-title { margin-left:35.8%; }
+@media(max-width:810px) {
+ .sketch-services { width:auto; margin-left:20px; margin-right:20px; }
+ .sketch-services .narrow, .sketch-services .section-intro { margin-left:0; max-width:100%; }
+ .sketch-services .process-title { margin-left:0; }
+ .sketch-services .offer-grid article { padding-left:0; padding-right:0; }
+}
+
+/* Annotated sketch corrections: text alignment, one rule per boundary, shared spacing. */
+.sketch-services .narrow, .sketch-services .section-intro,
+.sketch-services .process-title { margin-left:var(--text-offset,35.8%); }
+.sketch-services .principles h3, .sketch-services .step-number { font-weight:700; }
+.sketch-services .offer-grid { position:relative; }
+.sketch-services .offer-grid:has(article:nth-child(4)) { background:none; }
+.sketch-services .offer-grid:has(article:nth-child(4))::before {
+ content:""; position:absolute; top:50%; left:0; right:0; height:1px; background:#000;
+}
+.sketch-services .offer-grid article:nth-child(n+4) { border-top:0; }
+.sketch-services .offer-grid article { padding-top:16px; padding-bottom:16px; }
+.sketch-services .offer-grid article > h3 { margin-bottom:16px; }
+.sketch-services .offer-grid article > p:not(.price) { margin-bottom:20px; }
+.sketch-services .offer-grid .price { margin-top:auto; margin-bottom:0; }
+.sketch-services .section-intro { padding-bottom:28px; }
+.sketch-services .process-title { margin-top:40px; margin-bottom:28px; }
+.sketch-services .process-grid article { min-height:184px; }
+.sketch-services .process-grid article > h3 { min-height:40.8px; margin-bottom:32px; }
+.sketch-services .process-grid article > p { margin-top:0; }
+.sketch-services .billing-note { padding:16px 14px; }
+@media(max-width:810px) {
+ .sketch-services .narrow, .sketch-services .section-intro, .sketch-services .process-title { margin-left:0; }
+ .sketch-services .offer-grid:has(article:nth-child(4))::before { display:none; }
+ .sketch-services .offer-grid article:nth-child(n+4) { border-top:1px solid #000; }
+ .sketch-services .process-grid article { min-height:0; }
+ .sketch-services .process-grid article > h3 { min-height:0; margin-bottom:16px; }
+}
+
+/* Rules follow the centered grid; the footer keeps its wider placement. */
+.sketch-services { --page-rule-width:calc(100vw - 48px); }
+.sketch-services .ruled-section,
+.sketch-services #consulting.ruled-section,
+.sketch-services #teams.ruled-section,
+.sketch-services #styling.ruled-section { position:relative; border-top:0; }
+.sketch-services .ruled-section::before {
+ content:""; position:absolute; height:1px; background:#000;
+ width:100%; top:0; left:0; transform:none;
+}
+.sketch-services .offer-grid:has(article:nth-child(4))::before {
+ left:0; right:0; width:auto; transform:none;
+}
+/* The source art kit supplies regular and italic only. Explicit weight synthesis
+   plus a fine same-color stroke makes the annotated bold emphasis unambiguous. */
+.sketch-services .principles h3, .sketch-services .step-number {
+ font-family:"adobe-caslon-pro",serif; font-weight:700; font-synthesis:weight;
+ -webkit-text-stroke:0.25px currentColor;
+}
+.sketch-services .process-grid h3 { font-weight:400; -webkit-text-stroke:0; }
+.sketch-services > footer {
+ position:relative; width:var(--page-rule-width); left:50%; transform:translateX(-50%);
+ display:flex; justify-content:space-between; align-items:baseline;
+ font-family:"adobe-caslon-pro",serif; font-size:12px; line-height:1.2;
+ padding:0 24px 30px; border:0;
+}
+.sketch-services > footer span { font-family:inherit; font-size:inherit; }
+@media(max-width:810px) {
+ .sketch-services { --page-rule-width:calc(100vw - 40px); }
+ .sketch-services > footer { width:100%; left:0; transform:none; padding:0 0 24px; flex-direction:column; }
+}
+
+/* Match the exposed top/bottom ends; interior row joins stay continuous. */
+@media(min-width:811px) {
+ .sketch-services { --grid-end-inset:16px; }
+ .sketch-services .offer-grid article { position:relative; border-right:0; }
+ .sketch-services .offer-grid article:not(:nth-child(3n))::after {
+  content:""; position:absolute; top:var(--grid-end-inset); bottom:0; right:0; width:1px; background:#000;
+ }
+ .sketch-services .offer-grid article:nth-child(n+4)::after { top:0; }
+ .sketch-services #consulting > .offer-grid:not(.process-grid) article:nth-child(n+4)::after,
+ .sketch-services #styling > .offer-grid article:nth-child(n+4)::after { bottom:var(--grid-end-inset); }
+}
+
+/* Contact links reuse the earlier blue accent. */
+.sketch-services #contact .contact-email,
+.sketch-services #contact .contact-instagram { color:#0000ff; text-decoration:underline; }
+
+/* Service-option surfaces follow the PDF; header and introductory text stay plain. */
+.services-page { --card-inset:6px; --card-radius:16px; --card-fill:#efefef; }
+.sketch-services #credits h3 i { font:inherit; font-style:italic; }
+.sketch-services .offer-grid article { position:relative; isolation:isolate; }
+.sketch-services .offer-grid article::before {
+ content:""; position:absolute; inset:var(--card-inset);
+ border-radius:var(--card-radius); background:var(--card-fill); z-index:-1;
+}
+@media(max-width:810px) {
+ .sketch-services .offer-grid article { padding-left:16px; padding-right:16px; }
+}
+
+/* A consistent 12px content inset measured from the visible gray surface. */
+.services-page { --card-content-inset:12px; }
+.sketch-services .offer-grid article {
+ padding:calc(var(--card-inset) + var(--card-content-inset));
+}
+.sketch-services .offer-grid article > h3,
+.sketch-services .offer-grid article > p { width:100%; max-width:100%; }
+
+/* Let Caslon ascenders clear the tablet menu and keep touch targets generous. */
+@media(max-width:1100px) {
+ .services-page header { width:100%; gap:8px; }
+ .services-page .section-nav {
+  overflow:visible; flex-wrap:wrap; line-height:1.3;
+  padding-top:4px; padding-bottom:4px; row-gap:4px;
+ }
+ .services-page .section-nav a {
+  display:inline-flex; align-items:center; min-height:44px;
+ }
+}
+@media(max-width:360px) {
+ .services-page .section-nav { column-gap:4px; }
+}
+
+/* Anchor destinations follow the measured fixed header, including wrapped menus. */
+.sketch-services .ruled-section,
+.sketch-services #contact { scroll-margin-top:calc(var(--header-height, 100px) + 16px); }
+
+/* Responsive spacing trial: remove this block to restore the preceding layout. */
+@media(max-width:1100px) {
+ .sketch-services {
+  --section-space:32px;
+  width:calc(100% - 64px); margin-left:auto; margin-right:auto;
+  padding-top:calc(var(--header-height, 114px) + var(--section-space));
+ }
+ .sketch-services .ruled-section,
+ .sketch-services #consulting.ruled-section,
+ .sketch-services #teams.ruled-section,
+ .sketch-services #styling.ruled-section { padding-top:var(--section-space); }
+ .sketch-services .opening-copy { padding-bottom:var(--section-space); }
+ .sketch-services .principles { padding-bottom:var(--section-space); }
+ .sketch-services .section-intro { padding-bottom:var(--section-space); }
+ .sketch-services .process-title { margin-top:var(--section-space); margin-bottom:var(--section-space); }
+ .sketch-services #styling { padding-bottom:var(--section-space); }
+ .sketch-services .offer-grid,
+ .sketch-services .offer-grid:not(.process-grid) { grid-auto-rows:auto; background:none!important; }
+ .sketch-services .offer-grid:has(article:nth-child(4))::before { display:none; }
+ .sketch-services .offer-grid article,
+ .sketch-services .offer-grid article:nth-child(n+4) { min-height:0; border:0; }
+ .sketch-services .offer-grid article::after { display:none; }
+ .sketch-services .offer-grid article > h3 { min-height:0; margin-bottom:16px; }
+ .sketch-services .offer-grid article > p:not(.price) { margin-bottom:20px; }
+ .sketch-services .process-grid article > p { margin-top:0; }
+ .sketch-services .billing-note { grid-column:1 / -1; grid-row:auto; padding:16px 18px; }
+}
+@media(min-width:600px) and (max-width:1100px) {
+ .sketch-services .offer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ /* An absolute grid item spans both columns at the start of row two. */
+ .sketch-services .offer-grid:has(article:nth-child(3))::after {
+  content:""; position:absolute; grid-column:1 / -1; grid-row:2;
+  top:0; left:0; right:0; height:1px; background:#000; pointer-events:none;
+ }
+ .sketch-services .offer-grid article:nth-child(odd)::after {
+  display:block; content:""; position:absolute; right:0; top:16px; bottom:16px;
+  width:1px; background:#000;
+ }
+ .sketch-services .offer-grid article:nth-child(odd):has(+ article)::after { top:16px; bottom:16px; }
+ .sketch-services .offer-grid article:last-child:nth-child(odd)::after { display:none; }
+}
+@media(max-width:599px) {
+ .sketch-services { width:calc(100% - 40px); }
+ .sketch-services .offer-grid { grid-template-columns:1fr; }
+ .sketch-services .offer-grid article + article { border-top:0; }
+}
+
+/* Equal breathing room around section rules on phones and tablets. */
+@media(max-width:1100px) {
+ .sketch-services .principles article:last-child { margin-bottom:0; }
+ .sketch-services #consulting,
+ .sketch-services #teams { padding-bottom:calc(var(--section-space) - var(--card-inset)); }
+ .sketch-services #styling .billing-note { padding-bottom:0; margin-bottom:0; }
+}
